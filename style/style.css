@@ -1,0 +1,58 @@
+/* Raiz do documento. Declarando variáveis */
+:root {
+/* Palheta de cores */
+    --preto: #141414;
+    --laranja: #d35400;
+    --laranjaClaro: #e67e22;
+    
+/* Fim Palheta de cores */
+}
+
+/* Reset CSS */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Fim Reset CSS */
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Menu */
+
+header .container {
+    border-bottom: 0.5px solid #e67e22;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parceiros{
+    color: var(--laranja);
+    margin-right: 20px;
+}
+
+header .logo {
+    color: var(--laranja);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* Fim menu */
