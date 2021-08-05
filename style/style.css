@@ -1,39 +1,30 @@
-/* Raiz do documento. Declarando variáveis */
 :root {
 /* Palheta de cores */
     --preto: #141414;
     --laranja: #d35400;
     --laranjaClaro: #e67e22;
-    
 /* Fim Palheta de cores */
 }
-
 /* Reset CSS */
-
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-
 /* Fim Reset CSS */
 
 body {
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 /* Menu */
 
 header .container {
-    border-bottom: 0.5px solid #e67e22;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.parceiros{
-    color: var(--laranja);
     margin-right: 20px;
 }
 
@@ -41,7 +32,7 @@ header .logo {
     color: var(--laranja);
     font-family: 'Arial Black', Times;
     font-size: 40px;
-    margin-left: 10px;
+    margin-left: 3%;
 }
 
 header nav a {
@@ -49,6 +40,7 @@ header nav a {
     color: #AAA;
     margin-right: 10px;
     font-size: 20px;
+    font-family: 'Arial', Times;
 }
 
 header nav a:hover {
@@ -56,3 +48,143 @@ header nav a:hover {
 }
 
 /* Fim menu */
+
+.principal{
+    background: linear-gradient(rgba(119, 91, 91, 0.5), rgba(0,0,0,.50)100%), url('/img/capa.jpg');
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.principal .container{
+    margin-left: 3%;
+    width: 70%;
+}
+
+.titulo{
+    padding-top: 15%;
+    font-size: 70px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.titulo2{
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    border: none;
+    color: white;
+    background-color: #141414af;
+    padding: 9px 30px;
+    margin-right: 15px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    color: white;
+    background: var(--laranja);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.cards{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+}
+
+.botoesveja{
+    text-align: center;
+}
+
+.botoesveja .botao{
+    margin-top: 25px;
+    color: white;
+    border: white solid 1px;
+}
+
+.botoesveja .botao:hover{
+    margin-top: 25px;
+    color: white;
+    border: var(--laranja) solid 1px;
+}
+
+/* Footer */
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+    margin-top: 50px;
+}
+.social i{
+    font-size: 50px;
+    color: var(--laranjaClaro);
+}
+
+.sm a{
+	display: inline-block;
+	font-size: 40px; 
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: var(--laranja);
+	margin: 30px 16px;
+	transition: .4s linear;
+	position: relative;
+  }
+  
+  .sm a::before, .sm a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: .4s linear;
+  }
+  
+  .sm a:hover{
+	transform: scale(.8);
+  }
+  
+  .sm a:hover::before{
+	border-left: 4px solid;
+	border-right: 4px solid;
+	transform: skewX(20deg);
+  }
+  
+  .sm a:hover::after{
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	transform: skewY(-20deg);
+  }
+  .sm h5{
+      text-align: center;
+      padding-bottom: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--laranjaClaro);
+  }
+

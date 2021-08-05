@@ -1,23 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>FlowFlix</title>
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>PodFlix</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">FLOWFLIX</h2>
+            <h2 class="logo">PODFLIX</h2>
             <nav>
-                <a href="#">Recentes</a>
-                <a href="#">Em alta</a>
-                <a href="#">Em breve</a>
-                <a class="parceiros" href="#">PARCEIROS</a>
+                <a href="#">PODCASTS</a>
+                <a href="#">EM BREVE</a>
+                <a href="#">PARCEIROS</a>
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="principal">
+            <div class="container">
+                <h2 class="titulo">Uma plataforma de podcasts</h2>
+                <p class="descricao">Os melhores cortes e podcasts em um só lugar, sem enrolação e sem propagandas.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ME SURPREENDA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Podcasts em Alta -->
+        <div class="carrossel-destaques">
+            <h2 class="titulo2">Podcasts em Alta</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="cards" src="img/min1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="cards" src="img/min2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="cards" src="img/min3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="cards" src="img/min4.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="cards" src="img/min5.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="cards" src="img/min6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        <div class="botoesveja">
+            <button role="button" class="botao">
+                <i class="fas fa-play"></i>
+                VER TODOS OS PODCASTS
+            </button>
+        </div>
+        <!-- Fim Podcasts em Alta -->
+
+        <!-- Melhores Cortes -->
+        <div class="carrossel-destaques">
+            <h2 class="titulo2">Melhores Cortes</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="cards" src="img/corte1.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="cards" src="img/corte2.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="cards" src="img/corte3.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="cards" src="img/corte4.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="cards" src="img/corte5.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="cards" src="img/corte6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="botoesveja">
+            <button role="button" class="botao">
+                <i class="fas fa-play"></i>
+                VER TODOS OS CORTES
+            </button>
+        </div>
+        <!-- Fim Melhores Cortes -->
+
+        <footer>
+            <div class="social">
+                <div class="sm">
+                    <a href="https://www.facebook.com/israel.gomes.1042/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/israel.gomes1/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/israel-gomes-04407718b/"><i class="fab fa-linkedin-in"></i></a>
+                    <h5>Desenvolvido por: Israel Gomes</h5>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/1b43eb9939.js" crossorigin="anonymous"></script>
+    <!-- Scripts jquery -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
+
 </html>
