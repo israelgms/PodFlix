@@ -1,0 +1,21 @@
+@media screen and (max-width: 824px){ 
+    /* Até 824px considere:  */
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin: 5px;
+    }
+}
+    /* Passando de 1659px considere:  */
+@media screen and (min-width:1659px){
+    .principal{
+        height: 600px;
+    }
+
+    .titulo{
+        padding-top: 15%;
+    }
+
+}
